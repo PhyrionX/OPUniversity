@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default" ng-controller="NavbarController">
+	<div class="container-fluid">
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#/">Brand</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	  		<li><a ng-href="#/buscador">Buscador</a></li>
+		    <li><a ng-href="#/apuntes">Apuntes</a></li>
+		</ul>
+	  	<ul class="nav navbar-nav navbar-right">
+		    <li><a ng-href="#/baja/{{perfil.idUsuario}}"> Darse de baja</a></li>
+		    <li><a href="" ng-click="close();">Cerrar sesion</a></li>
+		</ul>
+	</div>
+</nav>

@@ -1,0 +1,45 @@
+<?php
+	//include all DAO files
+	require_once('class/sql/Connection.class.php');
+	require_once('class/sql/ConnectionFactory.class.php');
+	require_once('class/sql/ConnectionProperty.class.php');
+	require_once('class/sql/QueryExecutor.class.php');
+	require_once('class/sql/Transaction.class.php');
+	require_once('class/sql/SqlQuery.class.php');
+	require_once('class/core/ArrayList.class.php');
+	require_once('class/dao/DAOFactory.class.php');
+ 	
+	require_once('class/dao/ApuntesDAO.class.php');
+	require_once('class/dto/Apunte.class.php');
+	require_once('class/mysql/ApuntesMySqlDAO.class.php');
+	require_once('class/mysql/ext/ApuntesMySqlExtDAO.class.php');
+	require_once('class/dao/CarrerasDAO.class.php');
+	require_once('class/dto/Carrera.class.php');
+	require_once('class/mysql/CarrerasMySqlDAO.class.php');
+	require_once('class/mysql/ext/CarrerasMySqlExtDAO.class.php');
+	require_once('class/dao/ComentariosDAO.class.php');
+	require_once('class/dto/Comentario.class.php');
+	require_once('class/mysql/ComentariosMySqlDAO.class.php');
+	require_once('class/mysql/ext/ComentariosMySqlExtDAO.class.php');
+	require_once('class/dao/CorreosValidadosDAO.class.php');
+	require_once('class/dto/CorreosValidado.class.php');
+	require_once('class/mysql/CorreosValidadosMySqlDAO.class.php');
+	require_once('class/mysql/ext/CorreosValidadosMySqlExtDAO.class.php');
+	require_once('class/dao/InfoUsuarioDAO.class.php');
+	require_once('class/dto/InfoUsuario.class.php');
+	require_once('class/mysql/InfoUsuarioMySqlDAO.class.php');
+	require_once('class/mysql/ext/InfoUsuarioMySqlExtDAO.class.php');
+	require_once('class/dao/RelacionAmigosDAO.class.php');
+	require_once('class/dto/RelacionAmigo.class.php');
+	require_once('class/mysql/RelacionAmigosMySqlDAO.class.php');
+	require_once('class/mysql/ext/RelacionAmigosMySqlExtDAO.class.php');
+	require_once('class/dao/UniversidadesDAO.class.php');
+	require_once('class/dto/Universidade.class.php');
+	require_once('class/mysql/UniversidadesMySqlDAO.class.php');
+	require_once('class/mysql/ext/UniversidadesMySqlExtDAO.class.php');
+	require_once('class/dao/UsuariosDAO.class.php');
+	require_once('class/dto/Usuario.class.php');
+	require_once('class/mysql/UsuariosMySqlDAO.class.php');
+	require_once('class/mysql/ext/UsuariosMySqlExtDAO.class.php');
+
+?>

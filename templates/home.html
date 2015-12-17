@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-8 whiteForm">
+            <h1><img src="images/large.png" class="img-responsive" alt="Responsive image"></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta 
+voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi 
+tenetur eligendi.</p>
+        </div>
+        <div class="col-md-4 col-sm-8 col-md-offset-2 whiteForm">
+			<h2>Inicia sesión</h2>
+            <form class="form-horizontal" ng-submit="login()">
+            	<div class="alert alert-danger" ng-show="error.login" role="alert">Error al logear compruebe los datos.</div>
+				<div class="form-group" ng-class="{'has-error' : error.login}">
+					<label for="inputMail" class="col-sm-3">Email</label>
+					<div class="col-sm-9">
+						<input type="email" ng-model="loginUser.login" class="form-control" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group" ng-class="{'has-error' : error.login}">
+					<label for="inputPassword" class="col-sm-3">Contraseña</label>
+					<div class="col-sm-9">
+						<input type="password" ng-model="loginUser.password" class="form-control" placeholder="Contraseña">    
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default btn-success">Iniciar sesión</button>
+					</div>
+				</div>
+			</form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-8 col-md-offset-6 whiteForm">
+			<h2>Registrate</h2>
+			No sea el único que suspenda
+            <form class="form-horizontal" ng-submit="registrar()">
+            	<div class="alert alert-danger" ng-show="error.uexiste" role="alert">Error al registrar el correro ya está registrado.</div>
+            	<div class="alert alert-danger" ng-show="error.samePass" role="alert">Error al registrar las contraseñas no coinciden.</div>
+            	<div class="alert alert-danger" ng-show="error.evalido" role="alert">Error al registrar no es una cuenta de correo de universidad valida.</div>
+				<div class="form-group" ng-class="{'has-error' : error.correo}">
+					<label for="inputMail" class="col-sm-3">Email</label>
+					<div class="col-sm-9">
+						<input type="email" ng-model="usuario.email" name="email" class="form-control" id="inputMail"
+							placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputNombre" class="col-sm-3">Nombre</label>
+					<div class="col-sm-9">
+						<input type="text" ng-model="usuario.nombre" name="nombre" class="form-control" id="inputNombre"
+							placeholder="Nombre">
+					</div>
+				</div>
+				<div class="form-group" ng-class="{'has-error' : error.samePass}">
+					<label for="inputPassword" class="col-sm-3">Contraseña</label>
+					<div class="col-sm-9">
+						<input type="password" ng-model="usuario.pass" name="pass" class="form-control" id="inputPassword"
+							placeholder="Contraseña">
+					</div>
+				</div>
+				<div class="form-group" ng-class="{'has-error' : error.samePass}">
+					<label for="inputRePassword" class="col-sm-3">Confirmar contraseña</label>
+					<div class="col-sm-9">
+						<input type="password" ng-model="usuario.repass" name="repass" class="form-control" id="inputRePassword"
+							placeholder="Confirmar Contraseña">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button class="btn btn-block btn-success" type="submit">Send</button>
+					</div>
+				</div>
+			</form>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
